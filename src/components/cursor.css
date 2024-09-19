@@ -1,0 +1,18 @@
+.cursor {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    background-color: rgba(234, 16, 16, 0.2);
+    pointer-events: none; /* Prevent interference with mouse events */
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    transform: translate(-50%, -50%); /* Center the circle on the cursor */
+    z-index: 1000;
+}
+
+.cursor:hover {
+    background-color: rgba(229, 45, 45, 0.5); /* Change color on hover */
+    transform: translate(-50%, -50%) scale(1.5); /* Scale up on hover */
+}
+/* side bar */

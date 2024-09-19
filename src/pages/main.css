@@ -1,0 +1,167 @@
+.main-page{
+    position: relative;
+}
+
+.custom-shape-divider-bottom-1726521845 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1726521845 svg {
+    position: relative;
+    display: block;
+    width: calc(131% + 1.3px);
+    height: 151px;
+}
+
+.custom-shape-divider-bottom-1726521845 .shape-fill {
+    fill: #FFFFFF;
+}
+ /* zoom */
+ .zoom {
+    padding: 50px;
+   
+    transition: transform .5s; /* Animation */
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;}
+    
+  
+  .zoom:hover {
+    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  /* footer */
+  /* src/Footer.css */
+/* src/Footer.css */
+.footer {
+    background-color: #f8cd43;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-media {
+    margin-top: 10px;
+  }
+  
+  .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the icon circular */
+    background-color: #fb1717; /* Background color of the circle */
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none; /* Remove underline */
+
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.5); /* Slightly enlarges the icon on hover */
+    border: 3px solid rgb(0, 238, 255);
+    color: #8aa3e7; /* Color change on hover */
+    box-shadow: 0 15px 20px rgba(60, 222, 222, 0.84); /* Shadow effect on hover */
+  }
+  
+  .facebook:hover {
+    color: #3b5998;
+  }
+  
+  .twitter:hover {
+    color: #5b1927;
+  }
+  
+  .instagram:hover {
+    color: #e4405f;
+  }
+  
+  .linkedin:hover {
+    color: #25336b;
+  }
+  .youtube:hover {
+    color: #ff0000;
+  }
+  
+  .github:hover {
+    color: #333;
+  }
+  
+  .pinterest:hover {
+    color: #bd081c;
+  }
+  /* cursor */
+  
+  .cursor {
+    position: fixed;
+    width: 20px; /* Adjust size */
+    height: 20px; /* Adjust size */
+    background-color: rgba(0, 123, 255, 0.7); /* Adjust color */
+    border-radius: 50%;
+    pointer-events: none; /* Prevents cursor from interfering with mouse events */
+    transform: translate(-50%, -50%); /* Center the cursor */
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 9999; /* Ensure it stays on top */
+}
+
+.cursor:hover {
+    background-color: rgba(0, 123, 255, 1); /* Change color on hover */
+    transform: translate(-50%, -50%) scale(1.5); /* Scale up on hover */
+}
+/* scrollbar */
+.scrollable-container {
+  height: 200px; /* Set a fixed height to enable scrolling */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Custom scrollbar styles for WebKit browsers (Chrome, Safari) */
+.scrollable-container::-webkit-scrollbar {
+  width: 50px; /* Width of the scrollbar */
+}
+
+.scrollable-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+  background: #007BFF; /* Scrollbar color */
+  border-radius: 10px; /* Rounded edges */
+}
+
+.scrollable-container::-webkit-scrollbar-thumb:hover {
+  background: #0056b3; /* Color on hover */
+}
+
+/* Custom scrollbar styles for Firefox */
+.scrollable-container {
+  scrollbar-width: auto; /* "auto" or "thin" */
+  scrollbar-color: #007BFF #f1f1f1; /* Scrollbar color and track color */
+}
+.font-1{
+  font-family: 'Alkatra';font-size: 22px;
+}
+.img-1{
+  height: 10px;
+  width: 200px;
+}
+
+ 
+
+
+
