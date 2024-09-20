@@ -3,6 +3,8 @@ import axios from 'axios';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 //import ScrollToTopButton from './ScrollToTopButton'; // Import the ScrollToTopButton
 import ScrollToTopButton from '../components/ScrollToTopButton';
+import Sidebar from '../components/Sidebar';
+
 
 const Home = () => {
     const [foods, setFoods] = useState([]);
@@ -41,9 +43,11 @@ const Home = () => {
     };
 
     return (
+<>
+<Sidebar/>
 
 
-        <div className="container my-5">
+        <div className="container mx-5 my-5">
             <h1 className="text-center display-4 mb-4">Food Items</h1>
             <div className="mb-4 d-flex justify-content-center">
                 <input
@@ -54,7 +58,7 @@ const Home = () => {
                     className="form-control w-50"
                 />
             </div>
-            <div className="row">
+            <div className="row ms-4">
                 {filteredFoods.map((food) => (
                     <div className="col-md-4 mb-4" key={food._id}>
                         <Link to={`/food-detail/${food._id}`} className="text-decoration-none">
@@ -73,6 +77,7 @@ const Home = () => {
             </div>
             <ScrollToTopButton /> {/* Add the ScrollToTopButton */}
         </div>
+        </>
        
         // <div className="container mx-auto px-4 py-8">
         //     <h1 className="text-3xl font-bold text-center mb-8">Food Items</h1>

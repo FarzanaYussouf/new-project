@@ -12,10 +12,10 @@ const Main = () => {
 
 
 
-                <div className='row text-center' >
+                <div className='row text-center ms-4' >
                     <div className='col-4'>
-                        <h1 className='fw-bold fs-1 mb-4 font-effect-fire'> yummy food</h1>
-                        <p className='mx-5 px-5 mt-4 font-effect-shadow-multiple font-1'>Lorem,  odio animi, incidunt odit  adipisicing elit. Corporis.</p>
+                        <h1 className='fw-bold fs-1 mb-4 font-2 font-effect-neon'> yummy food</h1>
+                        <p className='mx-5 px-3 mt-4 font-effect-shadow-multiple font-1'>Lorem,  odio animi, incidunt odit  adipisicing elit. Corporis.</p>
 
                     </div>
                     <div div className='col-8 '>

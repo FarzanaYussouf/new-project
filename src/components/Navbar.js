@@ -9,11 +9,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-md navbar-light bg-white">
-      <div className="container-fluid">
+    <div data-aos="flip-left"
+    data-aos-duration ="1000">
+    <nav className="navbar navbar-expand-md navbar-light bg-white  
+    ">
+      <div className="container-fluid px-5">
         <Link to="/" className="navbar-brand d-flex align-items-center">
-          <img src="https://flowbite.com/docs/images/logo.svg" alt="Flowbite Logo" className="me-2" style={{ height: '40px' }} />
-          <span className="navbar-brand-text">Flowbite</span>
+          <img src="https://flowbite.com/docs/images/logo.svg" alt="Flowbite Logo" className="ms-5" style={{ height: '40px' }} />
+          <span className="navbar-brand-text ms-5">Flowbite</span>
         </Link>
         <button 
           className="navbar-toggler" 
@@ -36,6 +39,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+    </div>
   );
 };
 
