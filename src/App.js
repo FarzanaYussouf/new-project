@@ -11,9 +11,12 @@ import Main from './pages/Main'
 import Aos from 'aos'
 import "aos/dist/aos.css"
 import { useEffect } from 'react';
+import Footer from './components/Footer';
+
 // import Sidebar from './components/Sidebar';
 
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import BlogSection from './components/BlogSection';
 
 function App() {
 useEffect(() => {
@@ -34,7 +37,8 @@ useEffect(() => {
         <Route path = "/" element = {<Home/>}/>
         <Route path = "/food-detail/:id" element = {<FoodDetail/>}/>
       </Routes>
-     
+     {/* <BlogSection/> */}
+     <Footer/>
     </>
   );
 }

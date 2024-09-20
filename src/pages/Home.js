@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 //import ScrollToTopButton from './ScrollToTopButton'; // Import the ScrollToTopButton
 import ScrollToTopButton from '../components/ScrollToTopButton';
 import Sidebar from '../components/Sidebar';
+import BlogSection from '../components/BlogSection';
 
 
 const Home = () => {
@@ -47,7 +48,7 @@ const Home = () => {
 <Sidebar/>
 
 
-        <div className="container mx-5 my-5">
+        <div className="container mx-5 my-5"id='banner'>
             <h1 className="text-center display-4 mb-4">Food Items</h1>
             <div className="mb-4 d-flex justify-content-center">
                 <input
@@ -58,7 +59,7 @@ const Home = () => {
                     className="form-control w-50"
                 />
             </div>
-            <div className="row ms-4">
+            <div className="row ms-4" >
                 {filteredFoods.map((food) => (
                     <div className="col-md-4 mb-4" key={food._id}>
                         <Link to={`/food-detail/${food._id}`} className="text-decoration-none">
@@ -75,8 +76,10 @@ const Home = () => {
                     </div>
                 ))}
             </div>
+            <BlogSection/>
             <ScrollToTopButton /> {/* Add the ScrollToTopButton */}
         </div>
+      
         </>
        
         // <div className="container mx-auto px-4 py-8">

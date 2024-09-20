@@ -1,0 +1,45 @@
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f8eb;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 2px solid #fbb3db;
+    margin: 20px 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+   
+    /* box-shadow: 0 10px 12px rgba(241, 60, 223, 0.916); */
+    color: white;
+    text-align: center;
+    line-height: 60px; /* Center the icon vertically */
+    transition: transform 0.3s;
+}
+
+.facebook { background-color: #3b5998; }
+.twitter { background-color: #1da1f2; }
+.instagram { background-color: #e1306c; }
+.linkedin { background-color: #0077b5; }
+.youtube { background-color: #ff0000; }
+.pinterest { background-color: #e60023; }
+
+.icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 12px rgba(237, 161, 232, 0.916);
+}
