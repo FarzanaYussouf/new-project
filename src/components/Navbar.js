@@ -33,7 +33,7 @@ const Navbar = () => {
               <Link to="/" className="nav-link active" aria-current="page">Home</Link>
             </li>
             <li className="nav-item">
-              <Link to="/create-food" className="nav-link">Create Food</Link>
+              <Link to="/create-food" className="nav-link">Create food</Link>
             </li>
           </ul>
         </div>
@@ -44,3 +44,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+

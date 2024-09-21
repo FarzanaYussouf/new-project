@@ -4,8 +4,10 @@ import './App.css';
 import Navbar from './components/Navbar';
 import { Routes, Route } from 'react-router-dom';
 import Food from './pages/Food';
+// import Jewelry from './pages/Jewelry';
 import Home from './pages/Home';
 import FoodDetail from './pages/FoodDetail';
+// import JewelryDetail from './pages/JewelryDetail';
 import Cursor from './components/Cursor'
 import Main from './pages/Main'
 import Aos from 'aos'
@@ -30,13 +32,18 @@ useEffect(() => {
     {/* <Sidebar/> */}
       <Navbar/>
  <Main/>
-      
+    
 <Cursor/>
       <Routes>
         <Route path = "/create-food" element = {<Food/>}/>
         <Route path = "/" element = {<Home/>}/>
         <Route path = "/food-detail/:id" element = {<FoodDetail/>}/>
       </Routes>
+      {/* <Routes>
+        <Route path = "/create-jewelry" element = {<Jewelry/>}/>
+        <Route path = "/" element = {<Home/>}/>
+        <Route path = "/jewelry-detail/:id" element = {<JewelryDetail/>}/>
+      </Routes> */}
      {/* <BlogSection/> */}
      <Footer/>
     </>
